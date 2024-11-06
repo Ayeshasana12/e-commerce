@@ -8,13 +8,14 @@ import App from "./App";
 import { createBrowserRouter, Link, RouterProvider } from "react-router-dom";
 import SignIn from "./components/auth/sign-in/SignIn";
 import SignUp from "./components/auth/sign-up/SignUp";
+import ErrorPage from "./components/error-page/ErrorPage";
 // ya asa bhi kr sakta ha imporat
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
-    errorElement: <h1>404 Page Not Found</h1>
+    errorElement:  <ErrorPage />
 
   },
 
